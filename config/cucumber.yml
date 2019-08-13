@@ -1,0 +1,14 @@
+<% std_opts  = "--format pretty -r config -r common -r models -r steps" %>
+<% rpt_opts  = "--quiet --format html --out results/specs-report.html" %>
+<% json_opts = "--quiet --format json --out results/specs-report.json" %>
+
+<% firefox  = "BROWSER=firefox" %>
+<% headless = "BROWSER=headless" %>
+
+default:   <%= std_opts %>
+report:    <%= std_opts %> <%= rpt_opts %>
+json:      <%= std_opts %> <%= json_opts %>
+dashboard: <%= std_opts %> <%= rpt_opts %> <%= json_opts %>
+
+firefox:  <%= firefox %> <%= std_opts %>
+headless: <%= headless %> <%= std_opts %>

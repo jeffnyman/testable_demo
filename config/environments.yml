@@ -1,0 +1,20 @@
+demo: &demo
+  admin:
+    - username: admin
+      password: admin
+      message: You are now logged in as admin.
+  tester:
+    - username: tester
+      password: testing
+      message: You are now logged in as tester.
+
+groups:
+  - group: demo
+    servers:
+      - server: local
+        <<: *demo
+        url: http://localhost:9292
+
+      - server: remote
+        <<: *demo
+        url: https://veilus.herokuapp.com/

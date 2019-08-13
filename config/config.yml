@@ -1,0 +1,5 @@
+config:
+  current:
+    group: demo
+    server: remote
+    user: admin

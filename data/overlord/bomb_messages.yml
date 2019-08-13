@@ -1,0 +1,14 @@
+bomb:
+  messages:
+    inactive:
+      - Bomb is inactive.
+    active:
+      - Bomb is active.
+    incorrect-activation:
+      - Incorrect activation code.
+    incorrect-deactivation:
+      - Incorrect deactivation code.
+    invalid-activation:
+      - The code must be four numeric characters.
+    invalid-deactivation:
+      - The code must be four numeric characters.
